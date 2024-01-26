@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   clickableElements.forEach(function (element) {
-    element.addEventListener("click", function () {
+    const getTitleElement = element.querySelector(".title");
+    getTitleElement.addEventListener("click", function () {
       const innerContentElement = element.querySelector(".content");
       const innerContentTextElement = element.querySelector(".content-text");
       const innerArrowElement = element.querySelector(".accordion-arrow");
@@ -26,16 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       // Check if 'active' class exists on inner element
-      console.log(innerContentElement.classList.contains("content-open"))
-      if (innerContentElement.classList.contains("content-open")) {
-        innerContentElement.classList.remove("content-open");
-        innerContentTextElement.classList.remove("content-text-open");
-        innerArrowElement.classList.remove("rotate-icon");
-      } else {
-        innerContentElement.classList.add("content-open");
-        innerContentTextElement.classList.add("content-text-open");
-        innerArrowElement.classList.add("rotate-icon");
-      }
+      innerContentElement.classList.toggle("content-open");
+      innerContentTextElement.classList.toggle("content-text-open");
+      innerArrowElement.classList.toggle("rotate-icon");
     });
   });
 });
