@@ -39,6 +39,7 @@
 
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/utilities.css" />
+    <link rel="stylesheet" href="./assets/css/items.css" />
     <link rel="stylesheet" href="./assets/css/linea/styles.css" />
 
     <script
@@ -52,6 +53,7 @@
 
     <script defer src="./assets/js/script.js"></script>
     <script defer src="./assets/js/index.js"></script>
+    <script defer src="./assets/js/items.js"></script>
     <script defer src="./assets/js/kontakt-asterix.js"></script>
     <script defer src="./assets/js/kontakt-math-problem.js"></script>
     <script defer src="./assets/js/kontakt-send-form.js"></script>
@@ -229,118 +231,280 @@
 
       <section class="section-features">
         <a class="anchor-section-features-1" id="section-features"></a>
-        <div class="container grid grid--4-cols-minmax">
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box-icon ion-beer"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Bei Festen</h3>
-              <p class="feature-box-text">
-                Aufnahmen zum Vermessen Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Modi aut quis fugit voluptatem ea sequi iure
-                ratione, possimus eligendi accusamus doloremque
-              </p>
-              <a href="#section-features-1" class="btn-text">Mehr Infos</a>
+        <div id="outer-container-items">
+          <div class="container-items">
+            <div class="card-item">
+              <div class="front-item">
+                <img
+                  class="bg-item"
+                  src="./assets/images/item-image/bei-festen.svg"
+                  alt=""
+                />
+                <div class="front-title">
+                  <h1 class="front__heading-item">BEI FESTEN</h1>
+                </div>
+              </div>
+              <div class="back-item">
+                <h1 class="back__heading-item">BEI FESTEN</h1>
+                <ul class="back__list-item">
+                  <li>Landschaftsfotografie</li>
+                  <li>Immobilienfotografie</li>
+                  <li>Veranstaltungsdokumentation</li>
+                  <li>Inspektionsaufnahmen</li>
+                  <li>Wildlife-Capture</li>
+                  <li>Sportevents</li>
+                  <li>Werbeproduktionen</li>
+                  <li>...</li>
+                  <li>...</li>
+                </ul>
+                <div class="contact__button__container-item">
+                  <button
+                    class="contact__toggle-item"
+                    onclick="handleElementClick(event)"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box-icon ion-android-car"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                360 Grad Panorama Luftaufnahmen
-              </h3>
-              <p class="feature-box-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-                aut quis fugit voluptatem ea sequi iure ratione, possimus
-                eligendi accusamus doloremque
-              </p>
-              <a href="#popup-360-panorama" class="btn-text">Mehr Infos</a>
+            <div class="card-item">
+              <div class="front-item">
+                <img
+                  class="bg-item"
+                  src="./assets/images/item-image/360-grad-panorama-luftaufnahmen.svg"
+                  alt=""
+                />
+                <div class="front-title">
+                  <h1 class="front__heading-item">
+                    360 GRAD PANORAMA LUFTAUFNAHMEN
+                  </h1>
+                </div>
+              </div>
+              <div class="back-item">
+                <h1 class="back__heading-item">
+                  360 GRAD PANORAMA LUFTAUFNAHMEN
+                </h1>
+                <ul class="back__list-item">
+                  <li>Immobilienpräsentationen</li>
+                  <li>Tourismusattraktionen</li>
+                  <li>Virtuelle Museumsrundgänge</li>
+                  <li>Eventvisualisierungen</li>
+                  <li>Geschäftsvorstellungen</li>
+                  <li>Campus-Touren</li>
+                  <li>Kulturstätten-Übersichten</li>
+                  <li>...</li>
+                  <li>...</li>
+                </ul>
+                <div class="contact__button__container-item">
+                  <button
+                    class="contact__toggle-item"
+                    onclick="handleElementClick(event)"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box-icon ion-ios-search-strong"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Gutachten</h3>
-              <p class="feature-box-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-                aut quis fugit voluptatem ea sequi iure ratione, possimus
-                eligendi accusamus doloremque
-              </p>
-              <a href="#popup-gutachten" class="btn-text">Mehr Infos</a>
+            <div class="card-item">
+              <div class="front-item">
+                <img
+                  class="bg-item"
+                  src="./assets/images/item-image/gutachten.svg"
+                  alt=""
+                />
+                <div class="front-title">
+                  <h1 class="front__heading-item">GUTACHTEN</h1>
+                </div>
+              </div>
+              <div class="back-item">
+                <h1 class="back__heading-item">GUTACHTEN</h1>
+                <ul class="back__list-item">
+                  <li>Immobilienbesichtigungen</li>
+                  <li>Museumsbesuche</li>
+                  <li>Universitäts-Campus-Touren</li>
+                  <li>Hotel- und Resort-Präsentationen</li>
+                  <li>Sehenswürdigkeiten-Entdeckungen</li>
+                  <li>...</li>
+                  <li>...</li>
+                </ul>
+                <div class="contact__button__container-item">
+                  <button
+                    class="contact__toggle-item"
+                    onclick="handleElementClick(event)"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box-icon ion-university"></i>
-
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Theorie & Praxis Schulungen
-              </h3>
-              <p class="feature-box-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-                aut quis fugit voluptatem ea sequi iure ratione, possimus
-                eligendi accusamus doloremque
-              </p>
-              <a href="#popup-theorie" class="btn-text">Mehr Infos</a>
+            <div class="card-item">
+              <div class="front-item">
+                <img
+                  class="bg-item"
+                  src="./assets/images/item-image/theorie-praxis-schulugen.svg"
+                  alt=""
+                />
+                <div class="front-title">
+                  <h1 class="front__heading-item">
+                    THEORIE & PRAXIS SCHULUNGEN
+                  </h1>
+                </div>
+              </div>
+              <div class="back-item">
+                <h1 class="back__heading-item">THEORIE & PRAXIS SCHULUNGEN</h1>
+                <ul class="back__list-item">
+                  <li>Baufortschrittsdokumentationen</li>
+                  <li>Naturbeobachtungen</li>
+                  <li>Veranstaltungschroniken</li>
+                  <li>Jahreszeiten-Verläufe</li>
+                  <li>Agrarzyklen</li>
+                  <li>Stadtwachstums-Aufzeichnungen</li>
+                  <li>...</li>
+                  <li>...</li>
+                </ul>
+                <div class="contact__button__container-item">
+                  <button
+                    class="contact__toggle-item"
+                    onclick="handleElementClick(event)"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="col-1-of-4">
-            <a class="anchor-section-features-2" id="section-features-2"></a>
-
-            <div class="feature-box">
-              <i class="feature-box-icon ion-ios-home"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Photogrammetrie
-              </h3>
-              <p class="feature-box-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-                aut quis fugit voluptatem ea sequi iure ratione, possimus
-                eligendi accusamus doloremque
-              </p>
-              <a href="#popup-photogrammetrie" class="btn-text">Mehr Infos</a>
+            <div class="card-item">
+              <div class="front-item">
+                <img
+                  class="bg-item"
+                  src="./assets/images/item-image/photo-grommetrie.svg"
+                  alt=""
+                />
+                <div class="front-title">
+                  <h1 class="front__heading-item">PHOTOGRAMMETRIE</h1>
+                </div>
+              </div>
+              <div class="back-item">
+                <h1 class="back__heading-item">PHOTOGRAMMETRIE</h1>
+                <ul class="back__list-item">
+                  <li>Geländemodelle</li>
+                  <li>Volumenmessungen</li>
+                  <li>Strukturanalysen</li>
+                  <li>Vegetationskartierungen</li>
+                  <li>Hochwasserschutzplanungen</li>
+                  <li>Bergbau- und Tagebauüberwachungen</li>
+                  <li>...</li>
+                  <li>...</li>
+                </ul>
+                <div class="contact__button__container-item">
+                  <button
+                    class="contact__toggle-item"
+                    onclick="handleElementClick(event)"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box-icon ion-videocamera"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Foto & Video Luftaufnahmen
-              </h3>
-              <p class="feature-box-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-                aut quis fugit voluptatem ea sequi iure ratione, possimus
-                eligendi accusamus doloremque
-              </p>
-              <a href="#popup-foto-video" class="btn-text">Mehr Infos</a>
+            <div class="card-item">
+              <div class="front-item">
+                <img
+                  class="bg-item"
+                  src="./assets/images/item-image/foto-video-luftaufnahmen.svg"
+                  alt=""
+                />
+                <div class="front-title">
+                  <h1 class="front__heading-item">
+                    FOTO & VIDEO LUFTAUFNAHMEN
+                  </h1>
+                </div>
+              </div>
+              <div class="back-item">
+                <h1 class="back__heading-item">FOTO & VIDEO LUFTAUFNAHMEN</h1>
+                <ul class="back__list-item">
+                  <li>Technische Begutachtungen</li>
+                  <li>Schadensanalysen</li>
+                  <li>Sicherheitsbewertungen</li>
+                  <li>Einsatzmöglichkeiten von Drohnen</li>
+                  <li>Gesetzlichkeitsprüfungen</li>
+                  <li>Leistungsbeurteilungen</li>
+                  <li>...</li>
+                  <li>...</li>
+                </ul>
+                <div class="contact__button__container-item">
+                  <button
+                    class="contact__toggle-item"
+                    onclick="handleElementClick(event)"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box-icon ion-android-boat"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Drohnenhangar
-              </h3>
-              <p class="feature-box-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-                aut quis fugit voluptatem ea sequi iure ratione, possimus
-                eligendi accusamus doloremque
-              </p>
-              <a href="#popup-drohnenhangar" class="btn-text">Mehr Infos</a>
+            <div class="card-item">
+              <div class="front-item">
+                <img
+                  class="bg-item"
+                  src="./assets/images/item-image/drohnenhangar.svg"
+                  alt=""
+                />
+                <div class="front-title">
+                  <h1 class="front__heading-item">DROHNENHANGAR</h1>
+                </div>
+              </div>
+              <div class="back-item">
+                <h1 class="back__heading-item">DROHNENHANGAR</h1>
+                <ul class="back__list-item">
+                  <li>Drohnenflug- Grundlagen, Aufbau, Spezialtrainings</li>
+                  <li>Sicherheitsprotokolle</li>
+                  <li>Fotografie- und Videotechniken</li>
+                  <li>Technische Wartung</li>
+                  <li>Gesetzliche Richtlinien</li>
+                  <li>Flugmanöver-Training</li>
+                  <li>...</li>
+                  <li>...</li>
+                </ul>
+                <div class="contact__button__container-item">
+                  <button
+                    class="contact__toggle-item"
+                    onclick="handleElementClick(event)"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box-icon ion-plane"></i>
-
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Drohnen-Detektion & Abwehr
-              </h3>
-              <p class="feature-box-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-                aut quis fugit voluptatem ea sequi iure ratione, possimus
-                eligendi accusamus doloremque
-              </p>
-              <a href="#popup-detektion-abwehr" class="btn-text">Mehr Infos</a>
+            <div class="card-item">
+              <div class="front-item">
+                <img
+                  class="bg-item"
+                  src="./assets/images/item-image/drohnen-detektion-abwehr.svg"
+                  alt=""
+                />
+                <div class="front-title">
+                  <h1 class="front__heading-item">
+                    DROHNEN-DETEKTION & ABWEHR
+                  </h1>
+                </div>
+              </div>
+              <div class="back-item">
+                <h1 class="back__heading-item">DROHNEN-DETEKTION & ABWEHR</h1>
+                <ul class="back__list-item">
+                  <li>Vollautomatischer Flugbetrieb</li>
+                  <li>Erhöhung der Effizienz bei Überwachungsaufgaben</li>
+                  <li>Aktuelle Informationen durch autonomen Betrieb</li>
+                  <li>Erschließung neuer Einsatzgebiete</li>
+                  <li>...</li>
+                  <li>...</li>
+                </ul>
+                <div class="contact__button__container-item">
+                  <button
+                    class="contact__toggle-item"
+                    onclick="handleElementClick(event)"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
