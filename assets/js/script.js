@@ -2,7 +2,8 @@
 // Smoth Scrolling animation
 document.addEventListener("DOMContentLoaded", function () {
   const getPathName = window.location.pathname;
-  const getCurrentPage = getPathName.substring(1);
+  const getSplitPath = getPathName.split("/");
+  const getCurrentPage = getSplitPath[getSplitPath.length - 1];
   const getCurrentHash = window.location.hash;
   if (getCurrentHash) {
     navigateToPage(getCurrentPage, getCurrentHash);
@@ -62,15 +63,16 @@ function movePage(href) {
 // Handle navigation page to impressum
 function navigateToPage(pageName, hashName) {
   const pathName = window.location.pathname;
-  const currentPage = pathName.substring(1);
+  const splitPath = pathName.split("/");
+  const currentPage = splitPath[splitPath.length - 1];
   if (currentPage == pageName) {
     if (hashName) {
       history.pushState(null, null, hashName);
-      console.log('##########################')
-      console.log(pageName)
+      console.log("##########################");
+      console.log(pageName);
       if (pageName == "impressum.html") {
         const impressumSection = document.getElementById(hashName.substring(1));
-        console.log(impressumSection)
+        console.log(impressumSection);
         setTimeout(function () {
           impressumSection.click();
         }, 100);
