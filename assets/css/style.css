@@ -30,7 +30,7 @@
 
 .logo {
   height: 15rem;
-
+  cursor: pointer;
   animation: moveInTop 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
@@ -520,7 +520,7 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0 2.5rem 4em 0;
   border-radius: 2px;
   position: absolute;
-  z-index: 2;
+  /* z-index: 2; */
   transition: 0.2s;
 }
 
@@ -1150,11 +1150,15 @@
   gap: 2.4rem;
 }
 
+.footer-link {
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .footer-link:link,
 .footer-link:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  color: #767676;
   transition: all 0.3s;
 }
 
