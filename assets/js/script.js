@@ -68,6 +68,8 @@ function navigateToPage(pageName, hashName) {
       history.pushState(null, null, hashName);
       if (pageName == "impressum.html") {
         const impressumSection = document.getElementById(hashName.substring(1));
+        console.log('##########################')
+        console.log(impressumSection)
         setTimeout(function () {
           impressumSection.click();
         }, 100);
