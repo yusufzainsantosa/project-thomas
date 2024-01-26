@@ -123,3 +123,11 @@
     width: 250px;
   }
 }
+
+@media screen and (max-width: 1210px) {
+  .container-items {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 60px;
+  }
+}
