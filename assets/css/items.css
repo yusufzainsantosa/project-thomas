@@ -1,0 +1,125 @@
+#outer-container-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-items {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 25px;
+}
+
+.bg-item {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+/* Card Styling */
+.card-item {
+  cursor: pointer;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0, 0.4),
+    rgb(0, 0, 0, 0.7)
+  );
+  background-size: cover;
+  padding: 2rem 1.5rem;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: sans-serif;
+  width: 270px;
+  height: 420px;
+  transition: all 0.5s linear;
+  border-radius: 8px;
+  box-shadow: 5px 5px 25px 7px rgb(0, 0, 0, 0.5);
+}
+
+/* Front side Styling */
+.front-title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+.front__heading-item,
+.back__heading-item {
+  font-size: 1.5rem;
+  color: #ffffff9e;
+}
+.back__description-item {
+  margin-top: 1.25rem;
+  max-width: 20rem;
+  word-spacing: 4px;
+}
+.back__list-item {
+  font-size: 0.75rem;
+  padding: 0 0 0 20px;
+  color: #ffffffad;
+}
+
+/* Backside Styling */
+.back-item {
+  display: none;
+}
+.back__heading-item {
+  text-align: center;
+  height: 60px;
+}
+.back__list-item > li {
+  font-size: 1.5rem;
+}
+
+/* Toggle Button */
+.contact__button__container-item {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+.contact__toggle-item {
+  cursor: pointer;
+  padding: 5px 20px;
+  background-color: #0c3a4ec4;
+  color: #ffffffcf;
+  border: none;
+  border-radius: 5px;
+}
+.contact__toggle-item:hover {
+  background-color: #08435dfc;
+}
+
+.show-item {
+  display: block;
+}
+.hide-item {
+  display: none;
+}
+
+.flip__card-item {
+  transform: rotateY(-360deg);
+}
+
+/* .change_bg-item {
+  background-image: linear-gradient(to right, #165270d6, #93b9cdbf);
+} */
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .card-item {
+    margin-top: 1rem;
+    width: 250px;
+  }
+}
