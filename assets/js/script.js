@@ -33,7 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function checkHref(href) {
   // Check if the href contains a hash
-  if (href.includes("#")) {
+  const isHttpLink = href.startsWith("http");
+  if (isHttpLink) {
+    window.location.href = href;
+  } else if (href.includes("#")) {
     // Separate the page name and hash name
     const [pageName, hashName] = href.split("#");
     navigateToPage(pageName, `#${hashName}`);
