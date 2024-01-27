@@ -112,3 +112,10 @@
   position: absolute;
   right: 15px;
 }
+
+@media screen and (max-width: 620px) {
+  #accordion .accordion {
+    padding: 0;
+    min-width: none;
+  }
+}
