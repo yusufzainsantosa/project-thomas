@@ -7,9 +7,9 @@
 
 .container-items {
   display: flex;
-  gap: 35px;
+  gap: 25px;
   flex-wrap: wrap;
-  max-width: 1160px;
+  max-width: 1240;
   justify-content: center;
 }
 
