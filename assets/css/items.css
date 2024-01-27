@@ -36,9 +36,9 @@
   padding: 2rem 1.5rem;
   color: white;
   text-shadow: 1px 1px black;
-  font-family: sans-serif;
-  width: 270px;
-  height: 420px;
+  font-family: inherit;
+  width: 290px;
+  height: 430px;
   transition: all 0.5s linear;
   border-radius: 8px;
   box-shadow: 5px 5px 25px 7px rgb(0, 0, 0, 0.5);
@@ -71,7 +71,7 @@
 
 .front__list-item,
 .back__list-item {
-  padding: 0 0 0 20px;
+  padding: 0;
   font-size: 1.5rem;
   color: #ffffffad;
 }
