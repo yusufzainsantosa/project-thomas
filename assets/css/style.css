@@ -422,6 +422,10 @@
   margin-top: -15vh;
 }
 
+.section-about .heading-secondary {
+  margin-bottom: 4rem !important;
+}
+
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -453,6 +457,98 @@
   text-transform: uppercase;
 }
 
+.btn-frame {
+  width: 90%;
+}
+
+.btn-frame button {
+  margin: 20px 0;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+
+.btn-see-more {
+  background: linear-gradient(0deg, rgb(38 153 214) 0%, rgb(47 124 165) 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-see-more span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-see-more:before,
+.btn-see-more:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: rgb(38 153 214);
+  transition: all 0.3s ease;
+}
+.btn-see-more:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-see-more:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-see-more:hover {
+  background: transparent;
+  box-shadow: none;
+}
+.btn-see-more:hover:before {
+  height: 100%;
+}
+.btn-see-more:hover:after {
+  width: 100%;
+}
+.btn-see-more span:hover {
+  color: rgb(38 153 214);
+}
+.btn-see-more span:before,
+.btn-see-more span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: rgb(38 153 214);
+  transition: all 0.3s ease;
+}
+.btn-see-more span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-see-more span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-see-more span:hover:before {
+  height: 100%;
+}
+.btn-see-more span:hover:after {
+  width: 100%;
+}
+
 .paragraph {
   font-size: 1.6rem;
 }
@@ -463,6 +559,18 @@
 
 .composition {
   position: relative;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-composition {
+  height: 100%;
+}
+
+.container-composition-content {
+  text-align: justify;
 }
 
 .composition-photo {
