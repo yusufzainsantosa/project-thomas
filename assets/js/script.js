@@ -73,14 +73,13 @@ function navigateToPage(pageName, hashName) {
       history.pushState(null, null, hashName);
       if (pageName == "impressum.html") {
         const impressumSection = document.querySelector(`${hashName} .title`);
-        console.log(impressumSection);
         setTimeout(function () {
           impressumSection.click();
         }, 100);
       }
       setTimeout(function () {
         movePage(hashName);
-      }, 400);
+      }, 300);
     } else movePage("#");
   } else if (currentPage != pageName) {
     if (hashName) window.location.href = `${pageName}${hashName}`;

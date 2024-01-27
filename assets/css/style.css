@@ -1565,8 +1565,8 @@ a.anchor-section-stories {
   font-size: 1.2rem;
   font-weight: 700;
   left: 2rem;
-  top: 20rem;
-  position: absolute;
+  top: 0;
+  position: relative;
   transition: all 0.3s;
 }
 
@@ -1586,7 +1586,7 @@ a.anchor-section-stories {
 .kontakt-form-input:placeholder-shown ~ .kontakt-form-label-nachricht {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-20rem);
+  top: -20px;
 }
 
 .kontakt-form-group-2 {
@@ -1782,6 +1782,6 @@ a.anchor-section-stories {
 
   color: #009de6;
   font-family: inherit;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }

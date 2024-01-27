@@ -104,16 +104,10 @@ var emailClass = document.getElementsByClassName("kontakt-email");
 // if the error is corrected, check with an onchange Method if it is
 // still empty and if not,
 // remove the error  color
-//var inputVorname = document.getElementsByClassName("kontakt-input-vorname");
-//var asterixVorname = document.getElementsByClassName("asterix-style-vorname");
-var asterixVorname = document.getElementById("asterix-style-vorname-id");
-
 kontaktVornameID.addEventListener("input", updateVorname);
 kontaktVornameID.addEventListener("change", updateVorname);
 
 function updateVorname(event) {
-  console.log("updateVorname" + event);
-  console.log("updateVorname" + event.type);
   switch (event.type) {
     case "change":
       if (
@@ -125,18 +119,6 @@ function updateVorname(event) {
       break;
 
     case "input":
-      console.log("kontaktVorname " + kontaktVornameID);
-      console.log("asterixVorname " + asterixVorname);
-      if (
-        kontaktVornameID.getAttribute("placeholder") &&
-        kontaktVornameID.value === ""
-      ) {
-        asterixVorname.style.display = "inline-block";
-        //.classList.remove("asterix-style-star-add-remove");
-      } else {
-        asterixVorname.style.display = "none";
-        //asterixVorname.classList.add("asterix-style-star-add-remove");
-      }
       break;
   }
 }
@@ -144,16 +126,10 @@ function updateVorname(event) {
 /** This just adds / removes the Asterix
  *  on top of the input field if the field is empty
  *  and removes it if the inputvield gets text in it **/
-//var inputNachname = document.getElementsByClassName("kontakt-input-nachname");
-//var asterixNachname = document.getElementsByClassName("asterix-style-nachname");
-var asterixNachname = document.getElementById("asterix-style-nachname-id");
-
 kontaktNachnameID.addEventListener("input", updateNachname);
 kontaktNachnameID.addEventListener("change", updateNachname);
 
 function updateNachname(event) {
-  console.log("updateNachname" + event);
-  console.log("updateNachname" + event.type);
   switch (event.type) {
     case "change":
       if (
@@ -165,16 +141,6 @@ function updateNachname(event) {
       break;
 
     case "input":
-      console.log("kontaktNachnameID " + kontaktNachnameID);
-      console.log("asterixNachname " + asterixNachname);
-      if (
-        kontaktNachnameID.getAttribute("placeholder") &&
-        kontaktNachnameID.value === ""
-      ) {
-        asterixNachname.style.display = "inline-block";
-      } else {
-        asterixNachname.style.display = "none";
-      }
       break;
   }
 }
@@ -182,15 +148,10 @@ function updateNachname(event) {
 /** This just adds / removes the Asterix
  *  on top of the input field if the field is empty
  *  and removes it if the inputvield gets text in it **/
-//var inputeMail = document.getElementsByClassName("kontakt-email");
-var asterixeMail = document.getElementById("asterix-style-email-id");
-
 emailClass[0].addEventListener("input", updateeMail);
 emailClass[0].addEventListener("change", updateeMail);
 
 function updateeMail(event) {
-  console.log("updateeMail" + event);
-  console.log("updateeMail" + event.type);
   switch (event.type) {
     case "change":
       if (
@@ -202,16 +163,6 @@ function updateeMail(event) {
       break;
 
     case "input":
-      console.log("emailClass[0] " + emailClass[0]);
-      console.log("asterixeMail " + asterixeMail);
-      if (
-        emailClass[0].getAttribute("placeholder") &&
-        emailClass[0].value === ""
-      ) {
-        asterixeMail.style.display = "inline-block";
-      } else {
-        asterixeMail.style.display = "none";
-      }
       break;
   }
 }
@@ -219,16 +170,10 @@ function updateeMail(event) {
 /** This just adds / removes the Asterix
  *  on top of the input field if the field is empty
  *  and removes it if the inputvield gets text in it **/
-//var inputAntwort = document.getElementsByClassName("kontakt-math-problem");
-//var asterixAntwort = document.getElementsByClassName("asterix-style-antwort");
-var asterixAntwort = document.getElementById("asterix-style-antwort-id");
-
 kontaktMathProblemID.addEventListener("input", updateAntwort);
 kontaktMathProblemID.addEventListener("change", updateAntwort);
 
 function updateAntwort(event) {
-  console.log("updateAntwort " + event);
-  console.log("updateAntwort " + event.type);
   switch (event.type) {
     case "change":
       if (
@@ -240,16 +185,6 @@ function updateAntwort(event) {
       break;
 
     case "input":
-      console.log("kontaktMathProblemID " + kontaktMathProblemID);
-      console.log("asterixAntwort " + asterixAntwort);
-      if (
-        kontaktMathProblemID.getAttribute("placeholder") &&
-        kontaktMathProblemID.value === ""
-      ) {
-        asterixAntwort.style.display = "inline-block";
-      } else {
-        asterixAntwort.style.display = "none";
-      }
       break;
   }
 }
@@ -257,19 +192,12 @@ function updateAntwort(event) {
 /** This just adds / removes the Asterix
  *  on top of the input field if the field is empty
  *  and removes it if the inputvield gets text in it **/
-var asterixNachrichtArea = document.getElementById(
-  "asterix-style-nachricht-area-id"
-);
-
 kontaktMessageID.addEventListener("input", updateNachrichtArea);
 kontaktMessageID.addEventListener("change", updateNachrichtArea);
 
 function updateNachrichtArea(event) {
-  console.log("updateNachrichtArea" + event);
-  console.log("updateNachrichtArea" + event.type);
   switch (event.type) {
     case "change":
-      console.log("i am now in change");
       if (
         kontaktMessageID.classList.contains("kontakt-invalid-content") &&
         kontaktMessageID.value !== ""
@@ -278,19 +206,6 @@ function updateNachrichtArea(event) {
       }
       break;
     case "input":
-      console.log("i am now in input");
-      console.log("kontaktMessageID " + kontaktMessageID);
-      console.log("asterixNachrichtArea " + asterixNachrichtArea);
-      if (
-        kontaktMessageID.getAttribute("placeholder") &&
-        kontaktMessageID.value === ""
-      ) {
-        asterixNachrichtArea.style.display = "inline-block";
-        //asterixNachrichtArea.classList.remove("asterix-style-star-add-remove");
-      } else {
-        asterixNachrichtArea.style.display = "none";
-        //asterixNachrichtArea.classList.add("asterix-style-star-add-remove");
-      }
       break;
   }
 }
@@ -377,11 +292,8 @@ function removeBadPopup() {
 
 function validateAll() {
   var validationKorrekt = true;
-  console.log("validationKorrekt " + validationKorrekt);
   var mathQuestion = isMathInputCorrect();
-  console.log("mathQuestion " + mathQuestion);
   var errors = checkRequiredDataNotEmpty();
-  console.log("errors " + errors);
 
   var emailCheck = checkEmailValidation(emailClass[0].value);
   console.log("emailCheck " + emailCheck);
@@ -392,18 +304,10 @@ function validateAll() {
     // show error popup
     popupBadKontakt.classList.add("popup-kontakt-send-message");
     popupBadKontakt.classList.remove("popup-kontakt-message");
-    setInterval(removeBadPopup, 6000);
+    setTimeout(function () {
+      removeBadPopup();
+    }, 6000);
     validationKorrekt = false;
-    console.log(
-      "in if ->  errors !== 0 : " +
-        (errors !== 0) +
-        " !emailCheck " +
-        !emailCheck +
-        " mathQuestion " +
-        !mathQuestion +
-        " validationKorrekt " +
-        validationKorrekt
-    );
   }
   return validationKorrekt;
 }
@@ -431,12 +335,6 @@ function clearInputs() {
   kontaktMathProblemID.value, (checkboxDataSafety.checked = "");
 
   document.getElementById("math-solution-input").value = "";
-
-  asterixVorname.style.display = "inline-block";
-  asterixNachname.style.display = "inline-block";
-  asterixeMail.style.display = "inline-block";
-  asterixNachrichtArea.style.display = "inline-block";
-  asterixAntwort.style.display = "inline-block";
 
   document.getElementById("blue-close-outline").style.visibility = "hidden";
   document.getElementById("blue-checkmark-outline").style.visibility = "hidden";
@@ -466,7 +364,9 @@ function sendEmail() {
 
     popupGoodKontakt.classList.add("popup-kontakt-send-message");
     popupGoodKontakt.classList.remove("popup-kontakt-message");
-    setInterval(removeGoodPopup, 6000);
+    setTimeout(function () {
+      removeGoodPopup();
+    }, 6000);
 
     clearInputs();
     generateChaptaEquation();

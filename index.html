@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="./assets/css/utilities.css" />
     <link rel="stylesheet" href="./assets/css/items.css" />
     <link rel="stylesheet" href="./assets/css/linea/styles.css" />
+    <link rel="stylesheet" href="./assets/css/contact-form.css" />
 
     <script
       type="module"
@@ -853,21 +854,18 @@
                 id="kontakt-to-securefly-form"
                 method="post"
               >
-                <div
-                  class="grid grid--2-cols-minmax u-grid-colum-gap-bigger remove-margin-bottom remove-row-gap"
-                >
-                  <div>
-                    <div class="u-margin-bottom-medium">
-                      <h2 class="heading-secondary remove-margin-bottom">
-                        Kontakt aufnehmen
-                      </h2>
-                    </div>
-
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary remove-margin-bottom">
+                    Kontakt aufnehmen
+                  </h2>
+                </div>
+                <div class="container-contact-form">
+                  <div class="kontakt-info contact-section">
                     <div class="kontakt-form-group">
                       <input
                         type="text"
                         class="kontakt-form-input kontakt-input-vorname"
-                        placeholder="Vorname"
+                        placeholder="Vorname*"
                         id="kontakt-vorname"
                         oninvalid="this.setCustomValidity('Fülle dieses Feld aus')"
                         oninput="setCustomValidity('')"
@@ -876,18 +874,13 @@
                       <label for="kontakt-vorname" class="kontakt-form-label"
                         >Vorname <span class="asterix-style">*</span></label
                       >
-                      <span
-                        class="asterix-style-vorname asterix-style"
-                        id="asterix-style-vorname-id"
-                        >*</span
-                      >
                     </div>
 
                     <div class="kontakt-form-group">
                       <input
                         type="text"
                         class="kontakt-form-input kontakt-input-nachname"
-                        placeholder="Nachame"
+                        placeholder="Nachame*"
                         id="kontakt-nachname"
                         oninvalid="this.setCustomValidity('Fülle dieses Feld aus')"
                         oninput="setCustomValidity('')"
@@ -896,18 +889,13 @@
                       <label for="kontakt-nachname" class="kontakt-form-label"
                         >Nachname <span class="asterix-style">*</span></label
                       >
-                      <span
-                        class="asterix-style-nachname asterix-style"
-                        id="asterix-style-nachname-id"
-                        >*</span
-                      >
                     </div>
 
                     <div class="kontakt-form-group u-margin-bottom-medium">
                       <input
                         type="email"
                         class="kontakt-form-input kontakt-email"
-                        placeholder="e-Mail Adresse"
+                        placeholder="e-Mail Adresse*"
                         id="email"
                         oninvalid="this.setCustomValidity('Fülle dieses Feld aus')"
                         oninput="setCustomValidity('')"
@@ -917,18 +905,13 @@
                         >e-Mail Adresse
                         <span class="asterix-style">*</span></label
                       >
-                      <span
-                        class="asterix-style-email asterix-style"
-                        id="asterix-style-email-id"
-                        >*</span
-                      >
                     </div>
 
                     <div class="kontakt-form-group u-margin-bottom-medium">
                       <input
                         type="tel"
                         class="kontakt-form-input"
-                        placeholder="Telephone Nummer"
+                        placeholder="Telephone Nummer*"
                         id="telephone"
                         oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                         required
@@ -939,54 +922,35 @@
                     </div>
                   </div>
 
-                  <div class="kontakt-right-side">
-                    <div class="u-margin-bottom-medium">
-                      <h2
-                        class="heading-secondary remove-margin-bottom u-none-display"
-                      >
-                        &nbsp;
-                      </h2>
-                    </div>
-                    <div class="kontakt-form-group-2">
-                      <span
-                        class="asterix-style-nachricht-area asterix-style"
-                        id="asterix-style-nachricht-area-id"
-                        >*</span
-                      >
-                      <textarea
-                        class="kontakt-nachricht-area kontakt-form-input"
-                        name="kontakt-nachricht "
-                        placeholder="Nachricht"
-                        id="kontakt-message"
-                        oninvalid="this.setCustomValidity('Fülle dieses Feld aus')"
-                        oninput="setCustomValidity('')"
-                        required
-                      ></textarea>
+                  <div class="kontakt-nachricht contact-section">
+                    <textarea
+                      class="kontakt-nachricht-area kontakt-form-input"
+                      name="kontakt-nachricht "
+                      placeholder="Nachricht*"
+                      id="kontakt-message"
+                      oninvalid="this.setCustomValidity('Fülle dieses Feld aus')"
+                      oninput="setCustomValidity('')"
+                      required
+                    ></textarea>
 
-                      <label
-                        for="kontakt-message"
-                        class="kontakt-form-label-nachricht"
-                        >Nachricht <span class="asterix-style">*</span></label
-                      >
-                    </div>
+                    <label
+                      for="kontakt-message"
+                      class="kontakt-form-label-nachricht"
+                      >Nachricht <span class="asterix-style">*</span></label
+                    >
                   </div>
 
-                  <div class="math-problem u-move-small-right">
+                  <div class="kontakt-math-problem contact-section">
                     <span id="math-chapta-question"></span>
                     <input
                       type="text"
                       class="kontakt-math-problem kontakt-form-input kontakt-form-input-asterix"
-                      placeholder="Antwort"
+                      placeholder="Antwort*"
                       id="math-solution-input"
                       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                       onchange="updateSubmitButton()"
                       required
                     />
-                    <span
-                      class="asterix-style-antwort asterix-style"
-                      id="asterix-style-antwort-id"
-                      >*</span
-                    >
                     <div class="helper-relative">
                       <ion-icon
                         class="social-icon-2 blue"
@@ -1007,10 +971,8 @@
                     </label>
                   </div>
 
-                  <div
-                    class="grid grid--1-cols-minmax u-grid-colum-gap-bigger remove-margin-bottom remove-row-gap u-move-medium-right"
-                  >
-                    <div class="checkbox-style">
+                  <div class="kontakt-agreement contact-section">
+                    <div>
                       <input
                         type="checkbox"
                         id="data-safety"
@@ -1021,12 +983,12 @@
                       <label for="data-safety">
                         <div class="data-safety-text" id="data-safety-text">
                           Ich willige in die Datenschutzerklärung ein
+                          <span class="asterix-style">*</span>
                         </div>
-                        <span class="asterix-style">*</span>
                       </label>
                     </div>
 
-                    <div class="asterix-text">
+                    <div>
                       Hinweis: Felder mit
                       <span class="asterix-style">*</span> müssen ausgefüllt
                       werden
