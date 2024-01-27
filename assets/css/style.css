@@ -1119,28 +1119,34 @@
   margin-top: -10rem;
 }
 
-.personal-image {
-  /* also other technique to make the line like in polygon */
-
-  background-size: cover;
-  border-radius: 0.3rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-
-  /*TEST ONLY*/
-  height: 80rem;
-  background-image: url(../images/frank.jpg);
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.container-personal-image {
+  float: left;
+  height: fit-content;
+  width: fit-content;
 }
 
-.personal-information {
+.personal-image {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
 }
 
 .personal-text {
   font-size: 1.8rem;
   line-height: 1.8;
+  text-align: justify;
+}
+
+@media screen and (max-width: 675px) {
+  .container-personal-image {
+    float: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /**************************************/
