@@ -1119,16 +1119,25 @@
   margin-top: -10rem;
 }
 
+.container-personal-information {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .container-personal-image {
-  float: left;
-  height: fit-content;
-  width: fit-content;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  padding-right: 10px;
+}
+
+.personal-information {
+  width: 60%;
+  text-align: justify;
 }
 
 .personal-image {
-  margin-right: 20px;
-  margin-bottom: 10px;
-  width: 400px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
@@ -1137,15 +1146,16 @@
 .personal-text {
   font-size: 1.8rem;
   line-height: 1.8;
-  text-align: justify;
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 700px) {
   .container-personal-image {
-    float: none;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    padding-right: 0;
+    margin-bottom: 15px;
+  }
+  .personal-information {
+    width: 100%;
   }
 }
 
