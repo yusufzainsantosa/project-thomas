@@ -219,7 +219,7 @@
 }
 
 .item-modal__header {
-  min-height: 40px;
+  flex: 1;
   display: flex;
   align-items: center;
   color: #ffffffba;
