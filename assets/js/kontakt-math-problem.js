@@ -347,7 +347,7 @@ function removeGoodPopup() {
 
 function sendEmail() {
   if (validateAll()) {
-    var params = {
+    const params = {
       vorname_id: kontaktVornameID.value,
       nachname_id: kontaktNachnameID.value,
       eMail_adress: emailClass[0].value,
@@ -357,10 +357,11 @@ function sendEmail() {
       security_answer: kontaktMathProblemID.value,
       accept_security: checkboxDataSafety.checked,
     };
-    console.log(params);
-    /*emailjs
-    .send("service_pr2qu1y", "template_z13ok8f", params)
-    .then((message) => alert(message + "mail send successfully"));*/
+
+    emailjs
+      .send("service_pr2qu1y", "template_z13ok8f", params)
+      .then((message) => alert(message + "mail send successfully"))
+      .catch((err) => alert(err));
 
     popupGoodKontakt.classList.add("popup-kontakt-send-message");
     popupGoodKontakt.classList.remove("popup-kontakt-message");
