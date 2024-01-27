@@ -274,12 +274,12 @@
   }
 
   .container-items {
-    column-gap: 55px;
+    column-gap: 23px;
     row-gap: 35px;
   }
 }
 
-@media screen and (max-width: 691px) {
+@media screen and (max-width: 700px) {
   .item-modal {
     width: 90vw;
   }
