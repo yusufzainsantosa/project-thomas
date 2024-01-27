@@ -1285,7 +1285,34 @@
   background-color: #2e2e2e;
 }
 
-.show-email {
+.footer-social-link-desktop {
+  display: block;
+}
+
+.footer-social-link-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 5px;
+  }
+  .grid--footer > .logo-col {
+    grid-column: 1/3;
+  }
+  .footer-social-link-desktop {
+    display: none;
+  }
+  .footer-social-link-mobile {
+    padding-top: 60px;
+    grid-column: 1/3;
+    display: block;
+  }
+  .footer-social-link-mobile .social-links {
+    justify-content: center;
+  }
 }
 
 /**************************************/
