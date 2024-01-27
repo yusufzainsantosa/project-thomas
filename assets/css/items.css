@@ -27,29 +27,51 @@
 .card-item {
   cursor: pointer;
   position: relative;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: inherit;
+  width: 290px;
+  height: 430px;
+}
+
+.card-item:hover .front-item {
+  transform: rotateY(180deg);
+}
+
+.front-item,
+.back-item {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the back face when not visible */
   background-image: linear-gradient(
     to right,
     rgb(0, 0, 0, 0.4),
     rgb(0, 0, 0, 0.7)
   );
   background-size: cover;
-  padding: 2rem 1.5rem;
-  color: white;
-  text-shadow: 1px 1px black;
-  font-family: inherit;
-  width: 290px;
-  height: 430px;
-  transition: all 0.5s linear;
   border-radius: 8px;
   box-shadow: 5px 5px 25px 7px rgb(0, 0, 0, 0.5);
+}
+
+.back-item {
+  padding: 2rem 1.5rem;
+  transform: rotateY(180deg);
+}
+
+.card-item:hover .back-item {
+  transform: rotateY(0);
 }
 
 /* Front side Styling */
 .front-title {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   text-align: center;
   width: 100%;
   padding: 10px;
@@ -103,9 +125,6 @@
 }
 
 /* Backside Styling */
-.back-item {
-  display: none;
-}
 .back__heading-item {
   min-height: 40px;
   display: flex;
@@ -119,8 +138,7 @@
 .contact__button__container-item {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   text-align: center;
   width: 100%;
   padding: 10px;
@@ -315,7 +333,7 @@
     transform: none;
     text-align: right;
     width: 60%;
-    padding: 0 10px;
+    padding: 15px 15px;
     float: right;
   }
 
@@ -358,20 +376,36 @@
     display: block;
   }
 
-  .overflow-list {
+  .container-items > .card-item .back__list-item .overflow-list {
     display: none;
   }
 
-  .container-items > .card-item:nth-child(odd) .front__list-item {
+  .container-items > .card-item .front__list-item {
     padding: 0;
+  }
+
+  .container-items > .card-item .front__list-item li {
+    position: relative;
+  }
+
+  .container-items > .card-item:nth-child(even) .front__list-item li {
+    margin-left: 20px;
   }
   .container-items > .card-item:nth-child(odd) .front__list-item li {
     margin-right: 20px;
-    position: relative;
   }
-  .container-items > .card-item:nth-child(odd) .front__list-item li::marker {
+
+  .container-items > .card-item .front__list-item li::marker {
     color: transparent;
     position: absolute;
+  }
+  .container-items > .card-item:nth-child(even) .front__list-item li::before {
+    position: absolute;
+    content: "\2022";
+    line-height: 30px;
+    font-size: 2rem;
+    left: -17px;
+    top: 0;
   }
   .container-items > .card-item:nth-child(odd) .front__list-item li::after {
     position: absolute;

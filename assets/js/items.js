@@ -1,22 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const clickableCardElements = document.querySelectorAll(
-    "#outer-container-items .card-item"
-  );
   const clickableCloseModalElements = document.querySelectorAll(
     "#modals-container .modal-close-icon"
   );
 
-  clickableCardElements.forEach(function (element) {
-    element.addEventListener("click", function () {
-      const card = element;
-      const frontSide = element.querySelector(".front-item");
-      const backSide = element.querySelector(".back-item");
-
-      card.classList.toggle("flip__card-item");
-      frontSide.classList.toggle("hide-item");
-      backSide.classList.toggle("show-item");
-    });
-  });
   clickableCloseModalElements.forEach(function (element) {
     element.addEventListener("click", function () {
       const modalContainerElement = document.querySelector("#modals-container");
