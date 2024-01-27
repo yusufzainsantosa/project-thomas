@@ -257,7 +257,8 @@
 
 .modal__list-item li::after {
   position: absolute;
-  content: "\2022";
+  content: "\21B5";
+  transform: scaleX(-1) rotate(180deg);
   line-height: 30px;
   font-size: 2rem;
   right: -17px;
