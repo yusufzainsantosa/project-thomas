@@ -167,7 +167,7 @@
 .item-modal {
   position: absolute;
   height: 400px;
-  width: 70vw;
+  width: 80vw;
   max-width: 750px;
   top: 50%;
   left: 50%;
@@ -212,20 +212,22 @@
   height: inherit;
   position: absolute;
   width: 60%;
+  display: flex;
   right: 0;
-  padding: 10px 10px 10px 5px;
+  flex-direction: column;
+  padding: 40px 10px 20px 5px;
 }
 
 .item-modal__header {
-  min-height: 80px;
+  min-height: 40px;
   display: flex;
   align-items: center;
   color: #ffffffba;
+  margin-bottom: 8px;
 }
 
 .item-description {
   overflow: auto;
-  height: 275px;
   width: 100%;
   color: #ffffffc7;
   font-size: 1.5rem;
