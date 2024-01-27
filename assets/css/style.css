@@ -1164,8 +1164,10 @@
 .container-personal-image {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 40%;
   padding-right: 10px;
+  overflow: hidden;
 }
 
 .personal-information {
@@ -1175,9 +1177,11 @@
 
 .personal-image {
   width: 100%;
-  height: auto;
+  height: 80%;
   border-radius: 10px;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  object-position: center;
 }
 
 .personal-text {
@@ -1193,6 +1197,11 @@
   }
   .personal-information {
     width: 100%;
+  }
+  .personal-image {
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 2rem 1rem -5px rgba(0, 0, 0, 0.2);
   }
 }
 
