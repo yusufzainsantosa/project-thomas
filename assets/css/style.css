@@ -457,6 +457,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .section-about h2.heading-secondary {
+    font-size: 2.5rem;
+  }
+}
+
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -1551,6 +1557,12 @@ a.anchor-section-stories {
 .kontakt-form {
   width: 100%;
   padding: 6rem;
+}
+
+@media screen and (max-width: 500px) {
+  .section-kontakt > .container {
+    padding: 0 10px;
+  }
 }
 
 /* FORM LAYOUT */
