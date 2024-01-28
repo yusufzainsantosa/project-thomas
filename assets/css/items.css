@@ -57,6 +57,7 @@
     rgb(0, 0, 0, 0.4),
     rgb(0, 0, 0, 0.7)
   );
+  -webkit-backface-visibility: hidden;
   background-size: cover;
   border-radius: 8px;
   box-shadow: 5px 5px 25px 7px rgb(0, 0, 0, 0.5);
