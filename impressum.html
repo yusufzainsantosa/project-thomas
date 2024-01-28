@@ -293,6 +293,19 @@
     <!-- Include the common footer -->
     <div id="footer-container"></div>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W522EGN909"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-W522EGN909", { anonymize_ip: true });
+    </script>
     <script>
       fetch("./components/footer.html")
         .then((response) => response.text())
