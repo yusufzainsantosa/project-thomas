@@ -213,6 +213,8 @@
 }
 
 .modal-top-section {
+  padding-left: 10px;
+  padding-top: 10px;
   display: flex;
 }
 
@@ -226,6 +228,7 @@
 }
 
 .item-modal-bg-item {
+  box-shadow: 8px 5px 25px 7px rgb(0 0 0 / 76%);
   background: #00000082;
   border-radius: 10px 0 20px 0;
   width: 40%;
