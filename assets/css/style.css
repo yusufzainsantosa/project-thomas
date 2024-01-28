@@ -1896,6 +1896,8 @@ a.anchor-section-stories {
 
 #section-pano2vr {
   padding: 10rem 3.2rem;
+  max-width: 140rem;
+  margin: 0 auto;
 }
 
 #pano2vr {
