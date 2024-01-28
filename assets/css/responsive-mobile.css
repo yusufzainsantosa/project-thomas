@@ -1,4 +1,4 @@
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
   .navigation-button {
     top: 2rem;
     right: 2rem;
@@ -47,7 +47,7 @@
   }
 
   .card-item {
-    height: 250px;
+    height: 280px;
   }
 
   .back-item {
@@ -66,7 +66,7 @@
   }
 
   .container-items .front__heading-item {
-    padding-top: 10px;
+    padding: 10px;
   }
 
   .front__list-item {
