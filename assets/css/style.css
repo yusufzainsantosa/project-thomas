@@ -79,10 +79,14 @@
 
 @media screen and (max-width: 570px) {
   .heading-primary-main {
-    font-size: inherit;
+    font-size: 4rem;
+    padding-left: 10vw;
+    padding-top: 10px;
   }
   .heading-primary-sub {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
+    padding-left: 5vw;
+    padding-top: 10px;
   }
 }
 
