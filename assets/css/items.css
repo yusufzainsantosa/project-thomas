@@ -13,6 +13,10 @@
   justify-content: center;
 }
 
+.container-items * {
+  list-style-type: none;
+}
+
 .bg-item {
   position: absolute;
   width: 100%;
