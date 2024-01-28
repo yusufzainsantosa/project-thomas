@@ -108,7 +108,8 @@
 }
 .back__list-item li::before {
   position: absolute;
-  content: "\2022";
+  content: "\21B5";  
+  transform: rotate(180deg);
   line-height: 30px;
   font-size: 2rem;
   left: -17px;
@@ -398,7 +399,8 @@
   }
   .container-items > .card-item:nth-child(even) .front__list-item li::before {
     position: absolute;
-    content: "\2022";
+    content: "\21B5";
+    transform: rotate(180deg);
     line-height: 30px;
     font-size: 2rem;
     left: -17px;
@@ -406,7 +408,8 @@
   }
   .container-items > .card-item:nth-child(odd) .front__list-item li::after {
     position: absolute;
-    content: "\2022";
+    content: "\21B5";
+    transform: scaleX(-1) rotate(180deg);
     line-height: 30px;
     font-size: 2rem;
     right: -17px;
