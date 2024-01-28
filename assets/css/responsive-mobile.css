@@ -51,11 +51,11 @@
   }
 
   .container-items > .card-item:nth-child(odd) .bg-item {
-    mask-image: linear-gradient(to right, black, #0a232f00);
+    mask-image: linear-gradient(to left, #0a232f00, black 20%);
   }
 
   .container-items > .card-item:nth-child(even) .bg-item {
-    mask-image: linear-gradient(to right, #0a232f00, black);
+    mask-image: linear-gradient(to right, #0a232f00, black 20%);
   }
 
   .card-item {
