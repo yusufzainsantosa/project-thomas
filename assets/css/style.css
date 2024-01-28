@@ -1880,3 +1880,21 @@ a.anchor-section-stories {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+/**************************************/
+/*        SECTION PANO2VR      */
+/**************************************/
+
+#pano-container {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+}
+
+#section-pano2vr {
+  padding: 10rem 3.2rem;
+}
+
+#pano2vr {
+  max-width: 100%;
+  height: 500px;
+}

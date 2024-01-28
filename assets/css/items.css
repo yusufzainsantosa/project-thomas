@@ -108,7 +108,7 @@
 }
 .back__list-item li::before {
   position: absolute;
-  content: "\21B5";  
+  content: "\21B5";
   transform: rotate(180deg);
   line-height: 30px;
   font-size: 2rem;
@@ -414,5 +414,11 @@
     font-size: 2rem;
     right: -17px;
     top: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hide-item-mobile {
+    display: none;
   }
 }
