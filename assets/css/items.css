@@ -41,14 +41,23 @@
 .card-item:hover .front-item {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+  /* visibility: hidden; */
+  opacity: 0;
+  z-index: -1;
+}
+
+.card-item .front-item {
+  /* visibility: visible; */
+  opacity: 1;
+  z-index: 1;
 }
 
 .front-item,
 .back-item {
   transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;   
-  transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.5s, opacity 1s ease-in-out;
+  -webkit-transition: transform 0.5s, opacity 1s ease-in-out;
   top: 0;
   left: 0;
   position: absolute;
@@ -68,6 +77,9 @@
 
 .back-item {
   padding: 2rem 1.5rem;
+  /* visibility: hidden; */
+  opacity: 0;
+  z-index: -1;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
@@ -75,6 +87,9 @@
 .card-item:hover .back-item {
   transform: rotateY(0);
   -webkit-transform: rotateY(0);
+  /* visibility: visible; */
+  opacity: 1;
+  z-index: 1;
 }
 
 /* Front side Styling */
