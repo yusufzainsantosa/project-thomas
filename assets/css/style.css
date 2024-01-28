@@ -65,6 +65,7 @@
   font-size: 8rem;
   font-weight: 800;
   letter-spacing: 3.5rem;
+  padding-left: 3.5rem;
   text-align: center;
 
   /* just for the animation */
@@ -99,6 +100,7 @@
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.74rem;
+  padding-left: 1.74rem;
   line-height: 1.6;
   text-align: center;
 
