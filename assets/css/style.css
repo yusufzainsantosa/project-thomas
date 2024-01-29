@@ -4,6 +4,7 @@
 /* Other styles go here */
 
 .header {
+  min-height: 550px;
   height: 95vh; /* the hader have the viewport of 100% */
   background-image: linear-gradient(
       to right bottom,
@@ -15,8 +16,8 @@
   background-position: top;
 
   /* clip the image at the bottom of the image */
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
 
   /* position relativ for the logobox */
   position: relative;
@@ -705,14 +706,15 @@
   background-size: cover;
 
   /* makes the same result as with polygon */
-  transform: skewY(-5deg);
   margin-top: -12rem;
+  clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%);
+  -webkit-clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%);
 }
 
 /* important to make it again back */
-.section-features > * {
+/* .section-features > * {
   transform: skewY(5deg);
-}
+} */
 
 .feature-box {
   background-color: rgba(var(--color-primary-white-rgb), 0.8);
