@@ -16,8 +16,8 @@
   background-position: top;
 
   /* clip the image at the bottom of the image */
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 70px), 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 70px), 0 100%);
 
   /* position relativ for the logobox */
   position: relative;
@@ -707,8 +707,8 @@
 
   /* makes the same result as with polygon */
   margin-top: -12rem;
-  clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%);
-  -webkit-clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%);
+  clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 70px), 0 100%);
+  -webkit-clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 70px), 0 100%);
 }
 
 /* important to make it again back */
