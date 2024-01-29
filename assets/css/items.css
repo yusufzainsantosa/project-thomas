@@ -175,7 +175,7 @@
   background-color: #0c3a4ec4;
   color: #ffffffcf;
   border: none;
-  border-radius: 5px;
+  border-radius: 100px;
 }
 .contact__toggle-item:hover {
   background-color: #08435dfc;
@@ -211,7 +211,7 @@
 .item-modal {
   position: absolute;
   height: auto;
-  width: 80vw;
+  width: 95vw;
   max-width: 750px;
   top: 50%;
   left: 50%;
@@ -229,7 +229,7 @@
   right: -8px;
   top: -8px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 100px;
   z-index: 3;
   transition: all 0.3s;
 }
