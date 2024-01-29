@@ -426,6 +426,28 @@
   transform: rotate(-135deg);
 }
 
+@media screen and (max-height: 520px) {
+  .navigation-link:link,
+  .navigation-link:visited {
+    padding: 0.5rem 2rem;
+    font-size: 2.2rem;
+  }
+  .navigation-button {
+    top: 2rem;
+    right: 2rem;
+  }
+  .navigation-list {
+    top: 100px;
+  }
+}
+
+@media screen and (max-height: 380px) {
+  .navigation-link:link,
+  .navigation-link:visited {
+    padding: 0.3rem 2rem;
+  }
+}
+
 /**************************************/
 /*           SECTION ABOUT            */
 /**************************************/
