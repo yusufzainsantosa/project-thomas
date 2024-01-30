@@ -1,11 +1,15 @@
 @media screen and (max-width: 750px), screen and (max-height: 600px) {
   .item-description {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .item-container-description {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     height: 150px;
+  }
+
+  .item-modal__header {
+    font-size: 1.6rem;
   }
 
   .item-modal-bg-item {
