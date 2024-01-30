@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const grandparentNode = parentNode.parentNode;
       grandparentNode.classList.toggle("show-item");
       modalContainerElement.classList.toggle("show-item");
+      grandparentNode.classList.toggle("hide-item");
+      modalContainerElement.classList.toggle("hide-item");
     });
   });
 });
@@ -23,5 +25,7 @@ function handleElementClick(event) {
   const modalElement = document.querySelector(`#modal-${nameElement}`);
   modalContainerElement.classList.toggle("show-item");
   modalElement.classList.toggle("show-item");
+  modalContainerElement.classList.toggle("hide-item");
+  modalElement.classList.toggle("hide-item");
   event.stopPropagation();
 }

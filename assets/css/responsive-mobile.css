@@ -1,3 +1,78 @@
+@media screen and (max-width: 750px), screen and (max-height: 600px) {
+  .item-description {
+    font-size: 1.3rem;
+  }
+
+  .item-container-description {
+    font-size: 1.3rem;
+    height: 150px;
+  }
+
+  .item-modal-bg-item {
+    width: 30%;
+  }
+
+  .modal-top-content {
+    width: 70%;
+  }
+
+  .modal__description-item {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .modal__description-item::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .modal__description-item::-webkit-scrollbar-thumb {
+    background-color: #344955f2;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .modal-top-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .item-modal__header {
+    flex: 1;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .modal-top-section {
+    height: 230px;
+  }
+
+  .item-description {
+    overflow: auto;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .modal-top-section {
+    height: 210px;
+  }
+
+  .item-container-description {
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .items-modal-container {
+    display: none;
+  }
+
+  .item-modal {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .navigation-button {
     top: 2rem;
