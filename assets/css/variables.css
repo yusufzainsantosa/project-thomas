@@ -102,6 +102,7 @@ html {
   /* 10 px / 16 px = 0.625 = 62,5% */
   /* Percentage of user's browser font-size setting */
   scroll-behavior: smooth;
+  background-color: var(--color-tint-nearly-white);
 }
 
 body {
