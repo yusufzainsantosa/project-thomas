@@ -313,16 +313,24 @@ function validateAll() {
 }
 
 function sendEmailSmtpJs() {
+  var userTo = "thomas.rz.2112";
+  var domainTo = "googlemail.com";
+  var userFrom = "noreply.securefly";
+  var domainFrom = "gmail.com";
+
+  // Zusammenfügen der E-Mail-Adressen
+  var toEmail = userTo + "@" + domainTo;
+  var fromEmail = userFrom + "@" + domainFrom;
+
   Email.send({
     Host: "smtp.mailtrap.io",
     Username: "de28b0068d20e0",
     Password: "014d5b6fb061da",
-    //SecureToken: "ba686c1c-432e-4a3c-9529-23c7a3a1e7ea",
-    To: "thomas.rz.2112@googlemail.com",
-    From: "noreply.securefly@gmail.com",
+    To: toEmail,
+    From: fromEmail,
     Subject: "This is the subject",
     Body: "And this is the body",
-  }).then((message) => alert(message + "mail send successfully"));
+  }).then((message) => console.log(message + "mail send successfully"));
 }
 
 function clearInputs() {
@@ -360,8 +368,8 @@ function sendEmail() {
 
     emailjs
       .send("service_pr2qu1y", "template_z13ok8f", params)
-      .then((message) => alert(message + "mail send successfully"))
-      .catch((err) => alert(err));
+      .then((message) => console.log(message + "mail send successfully"))
+      .catch((err) => console.log(err));
 
     popupGoodKontakt.classList.add("popup-kontakt-send-message");
     popupGoodKontakt.classList.remove("popup-kontakt-message");

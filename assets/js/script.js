@@ -49,15 +49,19 @@ function checkHref(href) {
 
 // Move page
 function movePage(href) {
+  const pathName = window.location.pathname;
+  const splitPath = pathName.split("/");
+  const currentPage = splitPath[splitPath.length - 1];
   //Scroll back to top
-  if (href === "#") {
+  console.log(currentPage);
+  if (href === "#" || href === "#impressum") {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }
 
-  if (href !== "#" && href.startsWith("#")) {
+  if (href !== "#" && href.startsWith("#") && href != "#impressum") {
     const sectionEl = document.querySelector(href);
     sectionEl.scrollIntoView({ behavior: "smooth" });
   }
