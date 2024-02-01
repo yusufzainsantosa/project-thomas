@@ -83,7 +83,7 @@ function navigateToPage(pageName, hashName) {
       }
       setTimeout(function () {
         movePage(hashName);
-      }, 300);
+      }, 700);
     } else movePage("#");
   } else if (currentPage != pageName) {
     if (hashName) window.location.href = `${pageName}${hashName}`;
